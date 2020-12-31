@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+   <meta charset="utf-8">
+	<title>Chaturvedi Halthcare</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+
+	<script src="js/modernizr.js"></script>
+
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+   <header>
+
+   	<div class="row">
+   		<div><img src="logo.PNG" alt="image"></div>
+	         
+	      </div> 
+
+			<div class="social-links">
+			   <ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				   <li><a href="#"><i class="fa fa-pinterest"></i></a></li>				   
+				   <li><a href="#"><i class="fa fa-instagram"></i></a></li> 
+				   <li><a href="#"><i class="fa fa-dribbble"></i></a></li>				     			
+				</ul>
+			</div>
+   	</div> 
+
+   </header> 
+
+   <section id="home" class="home-static">
+
+   	<div class="shadow-overlay"></div>
+
+   	<div class="content-wrap-table">		   
+
+		   <div class="main-content-tablecell">
+
+		   	<div class="row">
+		   		<div class="col-twelve">
+
+		   			<div id="counter">
+		   				<span id="demo"></span>
+		   			</div>
+
+			  			<div class="bottom-text">
+			  				<h1>Our site is launching soon.</h1>
+				  			<p>
+							CONTACT US :
+
+							DR.chaturvedi's Healthcare Private Limited
+							59/51-A ,Birhana Road , Kanpur-208001
+
+							PHONE NO. :+(91)-9335744755
+				  			</p>			  			
+				  			<a type="button" href="https://www.google.com/maps/@26.464392,80.3569485,18.76z" class="btn btn-outline-primary">GET DIRECTION</a>	
+			  			</div>			  						  			   			
+
+			   	</div>
+
+					</div>
+		   	</div> 
+
+		   </div>
+		   
+		</div>
+   
+   </section>
+
+   <script>
+	   var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+	   var countDownFunction = setInterval(function() {
+		var now = new Date().getTime();
+		var timeDifference = countDownDate - now;
+		var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+		document.getElementById("demo").innerHTML = days + " <sup>days</sup> " + hours + " <sup>hours</sup> "
+  		+ minutes + " <sup>mins</sup> " + seconds + " <sup>secs</sup> ";
+
+	   if (timeDifference < 0) {
+		clearInterval(countdownfunction);
+		document.getElementById("demo").innerHTML = "EXPIRED";
+	}
+}, 1000);
+   </script>
+
+</body>
+</html>
